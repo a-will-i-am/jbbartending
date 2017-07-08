@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+<title> JB Bartending - Your #1 Mobile Bartender</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+<!-- Plugin CSS -->
+<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+<!-- Jquery Plugin in for fadein -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- Theme CSS -->
+<link href="css/creative.min.css" rel="stylesheet">
+<link href="css/landing.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Jquery Fadein / FadeOut -->
+<script>
+  jQuery('body').css('display','none');
+  jQuery(document).ready(function(){
+    jQuery('body').fadeIn();
+    jQuery('a').on('click',function(event){
+      var thetarget = this.getAttribute('target')
+      if (thetarget != "_blank"){
+        var thehref = this.getAttribute('href')
+        event.preventDefault();
+        jQuery('body').fadeOut(function(){
+          window.location = thehref
+        });
+      }
+    });
+  });
+  setTimeout(function(){
+    jQuery('body').fadeIn();
+  }, 1000)
+</script>
+<!--Jquery End-->
+	<div class="landingwrapper">
+    <div class="landingimg">
+      <img src="img/test.png" class="img-responsive" height="450px" width="450px">
+    </div>
+  </div>
+  <a href="index_2.html"><h2>  Enter Here </h2></a>
+</body>
+</html>
